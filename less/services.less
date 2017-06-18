@@ -1,0 +1,118 @@
+@import "basic.less";
+.service {
+    #header {
+        position: absolute;
+        width: 100%;
+    }
+    #content {
+        .header {
+            background-image: url(http://dummyimage.com/1920/1080/eee/ddd);
+            .row {
+                > div {
+                    .title,
+                    #breadcrumbs li {
+                        color: black;
+                    }
+                }
+            }
+        }
+        .services {
+            padding: 100px -0px;
+            .row {
+                > div {
+                    padding: 50px;
+                    border: 1px solid #f2f2f2;
+                    margin-left: -1px;
+                    margin-bottom: -1px;
+                    .title {
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 15px;
+                    }
+                }
+                > div:hover {
+                    transition: all .3s ease;
+                    background: #222;
+                    border: 1px solid transparent;
+                    i {
+                        color: @branding-color;
+                    }
+                    h3.title {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .feature {
+            padding: 100px 0;
+            .intro {
+                letter-spacing: 2px;
+                .title {
+                    font-size: 24px;
+                }
+            }
+            .feature-item {
+                position: relative;
+                padding-left: 80px;
+                margin-bottom: 80px;
+                text-align: left;
+                .icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .title {
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 27px;
+                }
+                .desc {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .special-services {
+            padding: 100px 0;
+            .title-block {
+                letter-spacing: 1px;
+                .title {
+                    margin: 0 0 5px 0;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: @branding-color;
+                }
+                .subtitle {
+                    margin: 0 0 10px 0;
+                    font-size: 18px;
+                    font-weight: normal;
+                    color: #333;
+                    line-height: 27px;
+                }
+            }
+            p {
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+    .big-dot {
+    	margin-bottom: 30px;
+        li {
+            float: left;
+            margin: 0 0 10px 0;
+            color: #323232;
+            width: 50%;
+            line-height: 1.5;
+            &:before {
+            	padding-right: 10px;
+            	content: '\f1ce';
+            	font-family: "fontello";
+            	font-size: 14px;
+            	color: #757575
+            }
+        }
+    }
+}
