@@ -59,7 +59,7 @@ hr {
 	margin-bottom: 100px;
 }
 
-.heading-title h2, p {
+.heading-title h2 {
 	margin: 0;
 }
 
@@ -200,6 +200,7 @@ hr {
 .our-services p {
 	padding-bottom: 30px;
 }
+
 ul.circled-list {
 	list-style-type: circle;
 	padding-left: 18px;
@@ -207,17 +208,125 @@ ul.circled-list {
 	line-height: 35px;
 }
 
-.comment p {
-	padding-bottom: 0;
+ul.arrow-list {
+	padding-left: 0;
+	width: 100%;
+	list-style-type: none;
+	color: #a2a2a2;
 }
 
-.comment.triangle {
+ul.arrow-list li {
+	border-bottom: 1px solid #333;
+}
+
+ul.arrow-list a {
+	display: block;
+	line-height: 45px;
+	color: #a2a2a2;
+	text-decoration: none;
+}
+
+.arrow-list a:before {
+	content: ">";
+	padding-right: 15px;
+}
+
+.arrow-list a:hover {
+	color: #d6b161;
+	transition: all .3s;
+}
+
+.comment p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.quote {
+	position: relative;
+}
+.triangle {
+	position: absolute;
+	bottom: -10px;
+	left: 25px;
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 7px 7px 0 7px;
+	border-width: 18px 9px 0 9px;
 	border-color: #f5f5f5 transparent transparent transparent;
+}
+.testimonial-meta {
+	margin-top: 5px;
+}
+.testimonial-meta .name {
+	margin: 0;
+	font-size: 14px;
+}
+
+.testimonial-meta .title {
+	font-size: 12px;
+	color: #7f7f7f;
+	letter-spacing: 1px;
 }
 
 /* footer */ 
+
+#footer {
+	background: #222;
+}
+
+#footer > .container {
+	padding: 80px 15px;
+}
+
+#footer h4 {
+    margin: 0 0 30px 0;
+	color: #fff;
+	font-size: 14px;
+}
+
+.recent-work li{
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.bottom {
+    padding: 35px 0;
+	border-top: 1px solid #2c2c2c;
+    background: #1b1b1b;
+}
+
+.bottom ul {
+	margin-bottom: 0;
+}
+.copyright {
+	color: #6f7273;
+}
+
+.copyright a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.copyright a:hover {
+	color: #d6b161;
+	transition: all .3s;
+}
+
+.social-media a {
+	display: block;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid #5a5a5a;
+	border-radius: 50%;
+	color: #5a5a5a;
+	text-decoration: none;
+}
+
+.social-media a:hover, .social-media a:focus {
+	color: #fff;
+	background: #5a5a5a;
+	transition: all .3s;
+}
 
