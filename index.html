@@ -6,11 +6,11 @@
   
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
   <link rel="stylesheet" href="css/fontello.css" />
-  
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
-  
+
 </head>
 <body>
   
@@ -18,7 +18,7 @@
     <div class="container clearfix">
       
       <div id="logo">
-        <img src="http://lorempixel.com/112/100/" alt="Massive" />
+        <img src="images/logo.png" alt="Massive" />
       </div>
       
       <div id="nav">
@@ -39,9 +39,36 @@
   </div>
   
   <div id="content">
+
     <div class="slider">
-      <img src="http://lorempixel.com/1920/1080/" alt="slider" />
-    </div>
+      <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="http://massive.markup.themebucket.net/assets/img/decor/banner1.jpg" alt="slider" />
+              </div>
+              <div class="swiper-slide">
+                <img src="http://massive.markup.themebucket.net/assets/img/decor/banner2.jpg" alt="slider" />
+              </div>
+              <div class="swiper-slide">
+                <img src="http://massive.markup.themebucket.net/assets/img/decor/banner3.jpg" alt="slider" />
+              </div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+      </div>
+    </div>  
+      
+
     
     <div class="categories">
       <div class="container">
@@ -309,5 +336,18 @@
   
   <a href="#header" id="go-top"><i class="icon-up-open"></i></a>
   
+  <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 30
+  });
+  </script>
 </body>
 </html>
