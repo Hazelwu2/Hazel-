@@ -208,7 +208,9 @@ ul {
   height: auto;
 }
 
-.category img:hover{
+/* 更正圖片會一直跳的問題 原本寫法 .category img:hover */
+
+.category a:hover img {
     transform:scale(1.3);
     transition: all .3s ease-in-out;
 }
