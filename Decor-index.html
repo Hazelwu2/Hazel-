@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
 	<title>Decor</title>
 	<link rel="stylesheet" href="css/fontello.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/decor-index.css">
+
+
 </head>
 <body>
 	
 
 <div id="header">
-	<div class="container clearfix">
+	<div class="container-fluid clearfix">
 		<div id="logo" class="pull-left brand-logo">
 			<img class="brand-logo" src="http://massive.markup.themebucket.net/assets/img/logo.png" alt="logo">
 		</div>
@@ -30,6 +37,51 @@
 			  <li><a href="#"><i class="icon-search"></i> search</a></li>
 			</ul>
 		</div>
+
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+					<img class="brand-logo" src="http://massive.markup.themebucket.net/assets/img/logo.png" alt="Massive">
+		      </a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">Page+</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu navbar-right">
+		            <li><a href="#">features</a></li>
+		            <li><a href="#">portfolio</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">portfolio <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 	</div>
 
 </div>
@@ -81,23 +133,23 @@
 	  <div class="container">
 	    
 	    <div class="row clearfix">
-	      <div class="col-6 category"><a href="#">
+	      <div class="col-md-6 category"><a href="#">
 	        <img src="http://massive.markup.themebucket.net/assets/img/decor/cat1.jpg" alt="category" />
 	        <span class="title dark">outdoor<br />lighting</span>
 	      </a></div>
-	      <div class="col-6 category"><a href="#">
+	      <div class="col-md-6 category"><a href="#">
 	        <img src="http://massive.markup.themebucket.net/assets/img/decor/cat2.jpg" alt="category" />
 	        <span class="title light">wooden<br />flooring</span>
 	      </a></div>
-	      <div class="col-4 category"><a href="#">
+	      <div class="col-md-4 category"><a href="#">
 	        <img src="http://massive.markup.themebucket.net/assets/img/decor/cat3.jpg" alt="category" />
 	        <span class="title dark">living<br />area</span>
 	      </a></div>
-	      <div class="col-4 category"><a href="#">
+	      <div class="col-md-4 category"><a href="#">
 	        <img src="http://massive.markup.themebucket.net/assets/img/decor/cat4.jpg" alt="category" />
 	        <span class="title dark">bathroom<br />fittings</span>
 	      </a></div>
-	      <div class="col-4 category"><a href="#">
+	      <div class="col-md-4 category"><a href="#">
 	        <img src="http://massive.markup.themebucket.net/assets/img/decor/cat5.jpg" alt="category" />
 	        <span class="title dark">tools &amp;<br />equipment</span>
 	      </a></div>
@@ -116,8 +168,9 @@
 	    </div>
 	    
 	    <div class="products">
+	    <div class="container-fluid">
 	      <ul class="clearfix row">
-	        <li class="col-4 product">
+	        <li class="col-md-4 product">
 	          <div class="thumbnail">
 	            <img src="http://lorempixel.com/370/277" alt="product" />
 	            <div class="cover">
@@ -131,7 +184,7 @@
 	            <div class="price">$39.99</div>
 	          </div>
 	        </li>
-	        <li class="col-4 product">
+	        <li class="col-md-4 product">
 	          <div class="thumbnail">
 	            <img src="http://lorempixel.com/370/277" alt="product" />
 	            <div class="cover">
@@ -145,7 +198,7 @@
 	            <div class="price">$39.99</div>
 	          </div>
 	        </li>
-	        <li class="col-4 product">
+	        <li class="col-md-4 product">
 	          <div class="thumbnail">
 	            <img src="http://lorempixel.com/370/277" alt="product" />
 	            <div class="cover">
@@ -159,7 +212,7 @@
 	            <div class="price">$39.99</div>
 	          </div>
 	        </li>
-	        <li class="col-4 product">
+	        <li class="col-md-4 product">
 	          <div class="thumbnail">
 	            <img src="http://lorempixel.com/370/277" alt="product" />
 	            <div class="cover">
@@ -173,7 +226,7 @@
 	            <div class="price">$39.99</div>
 	          </div>
 	        </li>
-	        <li class="col-4 product">
+	        <li class="col-md-4 product">
 	          <div class="thumbnail">
 	            <img src="http://lorempixel.com/370/277" alt="product" />
 	            <div class="cover">
@@ -187,7 +240,7 @@
 	            <div class="price">$39.99</div>
 	          </div>
 	        </li>
-	        <li class="col-4 product">
+	        <li class="col-md-4 product">
 	          <div class="thumbnail">
 	            <img src="http://lorempixel.com/370/277" alt="product" />
 	            <div class="cover">
@@ -203,7 +256,7 @@
 	        </li>
 	      </ul>
 	    </div>
-	          
+	    </div>     
 	  </div>
 	</div>
 
@@ -211,17 +264,19 @@
 
 <div id="footer">
   <div class="container clearfix">
+    <div class="row">
+    	
     
     <div class="logo">
       <img src="http://lorempixel.com/57/52" alt="massive" />
     </div>
     
-    <div class="copyright">
+    <div class="copyright col-md-6">
       <div class="title">&copy; massive 2014.</div>
       <div class="subtitle">building your site with lots of fun</div>
     </div>
     
-    <div class="social-media">
+    <div class="social-media col-md-6">
       <ul>
         <li><a href="#"><i class="icon-facebook"></i></a></li>
         <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -230,7 +285,7 @@
         <li><a href="#"><i class="icon-behance"></i></a></li>
       </ul>
     </div>
-    
+    </div>
   </div>
 </div>
 
@@ -250,6 +305,9 @@
 					$('#header').removeClass('mini');
 				});
 			});
+	</script>
+	<script>
+		$('.dropdown').dropdown()
 	</script>
 </body>
 </html>
